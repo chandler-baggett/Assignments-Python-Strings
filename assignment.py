@@ -40,48 +40,48 @@ extract_review(reviews)
 # Implement a script that ensures all user email addresses are in a standard format
 
 
-# def input_length_validator(first_name, last_name):
-#     if len(first_name) <= 2 or len(last_name) <= 2:
-#         print("Error! First and last names should be at least two characters long")
-#     else:
-#         print(len(first_name) + len(last_name))
-#         return len(first_name) + len(last_name)
+def input_length_validator(first_name, last_name):
+    if len(first_name) <= 2 or len(last_name) <= 2:
+        print("Error! First and last names should be at least two characters long")
+    else:
+        print(len(first_name) + len(last_name))
+        return len(first_name) + len(last_name)
 
-# while(True):
-#     first_name = input("Enter your first name: ")
-#     last_name = input("Enter your last name: ")
+while(True):
+    first_name = input("Enter your first name: ")
+    last_name = input("Enter your last name: ")
 
-#     input_length_validator(first_name, last_name)
+    input_length_validator(first_name, last_name)
 
-# def password_checker(password):
-#     if len(password) < 8:
-#         print("Error! The password must be equal to or greater than 8 characters long")
-#     elif password.lower() == password:
-#         print("Error! The password must contain one upper case letter")
-#     elif password.upper() == password:
-#         print("Error! The password must contain one lowercase letter")
-#     elif not any(char.isdigit() for char in password):
-#         print("Error! The password must contain at least one number")
+def password_checker(password):
+    if len(password) < 8:
+        print("Error! The password must be equal to or greater than 8 characters long")
+    elif password.lower() == password:
+        print("Error! The password must contain one upper case letter")
+    elif password.upper() == password:
+        print("Error! The password must contain one lowercase letter")
+    elif not any(char.isdigit() for char in password):
+        print("Error! The password must contain at least one number")
 
-# while(True):
+while(True):
 
-#     password = input("Enter a password. The password must be at least 8 characters long, contain one uppercase letter, one lowercase letter, and one number: ")
+    password = input("Enter a password. The password must be at least 8 characters long, contain one uppercase letter, one lowercase letter, and one number: ")
 
-#     password_checker(password)
+    password_checker(password)
 
-# import re
+import re
 
-# regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b'
+regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b'
 
-# def email_formatter(email):
-#     if re.fullmatch(regex, email):
-#         print("The email address is valid")
-#     else:
-#         print("The email address is not valid")
+def email_formatter(email):
+    if re.fullmatch(regex, email):
+        print("The email address is valid")
+    else:
+        print("The email address is not valid")
 
-# while True:
-#     email_address = input("Please enter an email address: ")
-#     email_formatter(email_address)
+while True:
+    email_address = input("Please enter an email address: ")
+    email_formatter(email_address)
 
 # 3. Interactive Help Desk Bot
 
